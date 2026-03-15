@@ -15,13 +15,13 @@ const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http
 const UUID = process.env.UUID || 'ac27dfbb-3981-455e-ab73-d74d20d73082'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
 const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.o8o.pp.ua';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '443';            // 使用哪吒v1请留空，哪吒v0需填写
-const NEZHA_KEY = process.env.NEZHA_KEY || 'Y8xfeMdmHlZDMv2eqc';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'miget-zcz-us.zkx.pp.ua';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYjljNWNmZDYyNWQ1YTM0ZDcwMzE0YjI2ODRlOGI0MTkiLCJ0IjoiNzZkMzYyMTctYjM4Ni00OTg0LTkxNzYtNDM5YTJhNjRlYzhjIiwicyI6Ik1EYzNNVEZqT1RNdE0yUmtaaTAwWVRsa0xXSXhOR0l0TkRCak4yVmlNVGMxWW1NMSJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
-const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
+const NEZHA_KEY = process.env.NEZHA_KEY || 'GhCcsPO7GM95aqkXt4';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'leafaas-zxz.o8o.pp.ua';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiZTgwYTRmNDYzYWVmMzVlNWVhYWNhOWRlZjY3NjE3ZDciLCJ0IjoiODM2MmRhNmEtOTMwMC00OTg1LThiZDctNDI2NWU4YTA5NTM3IiwicyI6IllXRXdOalExWVRrdE5XTTJNaTAwWkdNekxXSTBZbVl0WlRGa01tTTFObVpoTXpGbSJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_PORT = process.env.ARGO_PORT || 8009;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
 const CFIP = process.env.CFIP || 'spring.io';            // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'miget-zcz-us';                        // 节点名称
+const NAME = process.env.NAME || 'leafaas-zxz';                        // 节点名称
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
